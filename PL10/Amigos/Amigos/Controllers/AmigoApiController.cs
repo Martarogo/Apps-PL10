@@ -67,7 +67,7 @@ namespace Amigos.Controllers.API
                 db.Entry(toUpdate).State = EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (NullReferenceException e)
+            catch (NullReferenceException)
             {
                 Console.WriteLine("Empty database");
             } 

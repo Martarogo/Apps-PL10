@@ -137,13 +137,17 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AmigoApiController.cs" />
     <Compile Include="Controllers\AmigoController.cs" />
+    <Compile Include="Controllers\GCMApiController.cs" />
+    <Compile Include="Controllers\GCMModelsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PruebaController.cs" />
     <Compile Include="DataAccessLayer\Amigo DBContext.cs" />
+    <Compile Include="DataAccessLayer\GCMDBContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Amigo.cs" />
+    <Compile Include="Models\GCMModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +192,11 @@
     <Content Include="Views\Amigo\Index.cshtml" />
     <Content Include="Views\Amigo\Distance.cshtml" />
     <Content Include="Views\Amigo\Closest.cshtml" />
+    <Content Include="Views\GCMModels\Create.cshtml" />
+    <Content Include="Views\GCMModels\Delete.cshtml" />
+    <Content Include="Views\GCMModels\Details.cshtml" />
+    <Content Include="Views\GCMModels\Edit.cshtml" />
+    <Content Include="Views\GCMModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -16,6 +16,12 @@ namespace Amigos
                 defaults: new { id = RouteParameter.Optional }
             );
 
+            config.Routes.MapHttpRoute(
+                name: "DefaultGCMApi",
+                routeTemplate: "gcm/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
+
             // Para que WebAPI use JSON
             config.Formatters.JsonFormatter.
                 SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
