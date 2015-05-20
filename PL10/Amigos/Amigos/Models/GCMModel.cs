@@ -10,7 +10,7 @@ namespace Amigos.Models
     public class GCMModel
     {
         public int ID { get; set; }
-        [Display(Name="ID")]
+        [Display(Name="Registration ID")]
         [StringLength(4096)]
         public String regID { get; set; }
     }
